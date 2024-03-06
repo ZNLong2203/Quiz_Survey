@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo khảo sát</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nhập thông tin tiểu sử</h1>
+        <form id="info-form">
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <label for="dob">Ngày tháng năm sinh:</label>
+            <input type="date" id="dob" name="dob" required>
+            <label for="cccd">CCCD/CMND:</label>
+            <input type="text" id="cccd" name="cccd" required>
+            <label for="address">Địa chỉ thường trú:</label>
+            <input type="text" id="address" name="address" required>
+            <button type="submit">
+                <a href="quiz.html" class="aaa">
+                Bắt đầu khảo sát
+                </a>
+            </button>
+        </form>
+
+        <div id="survey-container" class="hidden">
+            <p>Hãy dành ít phút để hoàn thành khảo sát này.</p>
+            <ul id="questions"></ul>
+        </div>
+
+        <div id="results" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
